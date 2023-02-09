@@ -5,6 +5,26 @@
     "Welcome": "Welcome",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
 
+    "Menu:EMS": "Event Management",
+    "Menu:Events": "Events",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    
+    "NewEvent": "New event",
+    "Title": "Title",
+    "Description": "Description",
+    "Location": "Location",
+    "Enum:Location.0": "Undefined",
+    "Enum:Location.1": "Amman",
+    "Enum:Location.2": "Irbid",
+    "Enum:Location.3": "Zarqa",
+    "Date": "Date",
+    
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+  
     "Permission:EMS": "Event Management System",
     "Permission:Events": "Event Management",
     "Permission:Events.Create": "Creating new event",

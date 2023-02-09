@@ -33,6 +33,18 @@ public class EMSMenuContributor : IMenuContributor
                 order: 0
             )
         );
+        context.Menu.AddItem(
+            new ApplicationMenuItem(
+                "EMS",
+                l["Menu:EMS"],
+                icon: "fa fa-calendar"
+            ).AddItem(
+                new ApplicationMenuItem(
+                    "EMS.Events",
+                    l["Menu:Events"],
+                    url: "/Events")
+                )
+            );
 
         if (MultiTenancyConsts.IsEnabled)
         {
