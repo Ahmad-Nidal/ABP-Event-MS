@@ -3,7 +3,8 @@
 
 ### Tasks:
 - [x] Events backend
-- [ ] Fixing requests error (acces denid??)
+- [x] Fixing requests error (mapping)
 - [ ] Events frontend
+- [ ] Comments
 
-.........(comments, authentication, ...)
+.............authentication, ...)
