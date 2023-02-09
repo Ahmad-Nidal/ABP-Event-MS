@@ -7,7 +7,7 @@ public class EMSApplicationAutoMapperProfile : Profile
 {
     public EMSApplicationAutoMapperProfile()
     {
-        CreateMap<EventDto, Event>();
-        CreateMap<CreateUpdateEventDto, Event>();
+        CreateMap<Event, EventDto>();
+        CreateMap<Event, CreateUpdateEventDto>();
     }
 }

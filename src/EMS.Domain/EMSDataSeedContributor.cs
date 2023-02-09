@@ -10,18 +10,18 @@ namespace EMS;
 public class EMSDataSeederContributor
     : IDataSeedContributor, ITransientDependency
 {
-    private readonly IRepository<Event, Guid> _bookRepository;
+    private readonly IRepository<Event, Guid> _eventRepository;
 
-    public EMSDataSeederContributor(IRepository<Event, Guid> bookRepository)
+    public EMSDataSeederContributor(IRepository<Event, Guid> eventRepository)
     {
-        _bookRepository = bookRepository;
+        _eventRepository = eventRepository;
     }
 
     public async Task SeedAsync(DataSeedContext context)
     {
-        if (await _bookRepository.GetCountAsync() <= 0)
+        if (await _eventRepository.GetCountAsync() <= 0)
         {
-            await _bookRepository.InsertAsync(
+            await _eventRepository.InsertAsync(
                 new Event
                 {
                     Title = "Amman Event",
@@ -32,7 +32,7 @@ public class EMSDataSeederContributor
                 autoSave: true
             );
 
-            await _bookRepository.InsertAsync(
+            await _eventRepository.InsertAsync(
                 new Event
                 {
                     Title = "Zarq Event",
