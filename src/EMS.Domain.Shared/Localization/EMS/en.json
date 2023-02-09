@@ -3,6 +3,12 @@
   "texts": {
     "Menu:Home": "Home",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+
+    "Permission:EMS": "Event Management System",
+    "Permission:Events": "Event Management",
+    "Permission:Events.Create": "Creating new event",
+    "Permission:Events.Edit": "Editing the event",
+    "Permission:Events.Delete": "Deleting the event"
   }
 }

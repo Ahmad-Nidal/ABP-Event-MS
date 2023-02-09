@@ -8,9 +8,13 @@ public class EMSPermissionDefinitionProvider : PermissionDefinitionProvider
 {
     public override void Define(IPermissionDefinitionContext context)
     {
-        var myGroup = context.AddGroup(EMSPermissions.GroupName);
-        //Define your own permissions here. Example:
-        //myGroup.AddPermission(EMSPermissions.MyPermission1, L("Permission:MyPermission1"));
+        var emsGroup = context.AddGroup(EMSPermissions.GroupName, L("Permission:EMS"));
+        
+        var eventsPermission = emsGroup.AddPermission(EMSPermissions.Events.Default, L("Permission:Events"));
+
+        eventsPermission.AddChild(EMSPermissions.Events.Create, L("Permission:Events.Create"));
+        eventsPermission.AddChild(EMSPermissions.Events.Edit, L("Permission:Events.Edit"));
+        eventsPermission.AddChild(EMSPermissions.Events.Delete, L("Permission:Events.Delete"));
     }
 
     private static LocalizableString L(string name)
